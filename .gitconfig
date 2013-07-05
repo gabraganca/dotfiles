@@ -1,0 +1,19 @@
+[ga]
+	braganca = Gustavo Braganca
+[user]
+	name = Gustavo Braganca
+	email = ga.braganca@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[color]
+	ui = auto
+[diff "odf"]
+      textconv=odt2txt
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	ls = log --oneline
+	unstage = reset HEAD --
+	last = log -1 HEAD
