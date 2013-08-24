@@ -108,3 +108,6 @@ fi
 
 # Source bash-git-prompt
 source ~/.bash/gitprompt.sh
+# virtualenvwrapper stuff
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
