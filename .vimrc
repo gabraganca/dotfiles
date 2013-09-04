@@ -20,3 +20,14 @@ autocmd BufWritePre *.md :%s/\s\+$//e
 " For nerdcommenter
 filetype plugin indent on
 execute pathogen#infect()
+" Spell checking
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pressing \ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+" ]s and [s to move down-up marked words
+" Shortcuts using <leader> (\)
+" Add word to dictionary
+map <leader>sa zg
+" Substitution option for marked word
+map <leader>s? z=
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
