@@ -30,4 +30,6 @@ map <leader>ss :setlocal spell!<cr>
 map <leader>sa zg
 " Substitution option for marked word
 map <leader>s? z=
+" Spell check git commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
