@@ -33,3 +33,7 @@ map <leader>s? z=
 " Spell check git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Copy to clipboard on Visual mode
+vnoremap <C-c> "+y
+" Paste to vim"
+map <C-p> "+p
