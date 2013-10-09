@@ -123,3 +123,7 @@ else
       source /opt/intel/composer_xe_2011_sp1.9.293/bin/compilervars.sh ia32
 
 fi
+
+# Alias `hub` as `git`
+# For more infor, chech here https://github.com/github/hub/#aliasing
+eval "$(hub alias -s)"
