@@ -37,3 +37,7 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 vnoremap <C-c> "+y
 " Paste to vim"
 map <C-p> "+p
+"Highlight thecursor line
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
