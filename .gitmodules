@@ -18,7 +18,3 @@
 	path = .vim/bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
     ignore = dirty
-[submodule ".local/share/vlc/lua/extensions"]
-	path = .local/share/vlc/lua/extensions
-	url = git@github.com:exebetche/vlsub.git
-    ignore = dirty
