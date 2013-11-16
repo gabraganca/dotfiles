@@ -49,3 +49,6 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 
 " Pathogen
 execute pathogen#infect()
+" Airline needs this
+set laststatus=2
+set t_Co=256
