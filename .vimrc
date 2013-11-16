@@ -56,5 +56,9 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 
 " Pathogen
 execute pathogen#infect()
-" Airline needs this
+" Airline config
 set laststatus=2
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#branch#symbol = '⎇  '
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
