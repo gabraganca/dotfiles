@@ -30,6 +30,11 @@ map <leader>ss :setlocal spell!<cr>
 map <leader>sa zg
 " Substitution option for marked word
 map <leader>s? z=
+" Set up colors for spell highlighting
+hi SpellBad term=reverse ctermfg=white ctermbg=darkred guifg=#ffffff guibg=#7f0000 gui=underline
+hi SpellCap guifg=#ffffff guibg=#7f007f
+hi SpellRare ctermfg=black ctermbg=yellow guifg=#ffffff guibg=#00007f gui=underline
+hi SpellLocal term=reverse ctermfg=black ctermbg=darkgreen guifg=#ffffff guibg=#7f0000 gui=underline
 " Spell check git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
