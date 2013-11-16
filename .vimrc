@@ -17,9 +17,7 @@ autocmd BufWritePre *.bib :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.rst :%s/\s\+$//e
 autocmd BufWritePre *.md :%s/\s\+$//e
-" For nerdcommenter
-filetype plugin indent on
-execute pathogen#infect()
+
 " Spell checking
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pressing \ss will toggle and untoggle spell checking
@@ -44,3 +42,10 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins configurations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Pathogen
+execute pathogen#infect()
