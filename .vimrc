@@ -56,6 +56,8 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 
 " Pathogen
 execute pathogen#infect()
+" Update help files
+Helptags
 " Airline config
 set laststatus=2
 let g:airline#extensions#syntastic#enabled = 1
