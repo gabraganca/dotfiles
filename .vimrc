@@ -52,6 +52,8 @@ hi Search cterm=NONE ctermfg=grey ctermbg=blue
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
+"Set color for Visual mode
+hi Visual ctermfg=yellow ctermbg=blue
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins configurations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
