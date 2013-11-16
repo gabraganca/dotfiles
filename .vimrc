@@ -1,5 +1,7 @@
 " Set identation to 4 spaces
 set noai ts=4 sw=4 expandtab
+" Set 256 colors
+set t_Co=256
 " Set an 80 char column
 set colorcolumn=80
 " Rule for Makefiles to use tab
@@ -51,4 +53,3 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 execute pathogen#infect()
 " Airline needs this
 set laststatus=2
-set t_Co=256
