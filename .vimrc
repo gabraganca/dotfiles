@@ -47,6 +47,8 @@ map <C-p> "+p
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
+" Set highlight color
+hi Search cterm=NONE ctermfg=grey ctermbg=blue
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
