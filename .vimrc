@@ -9,7 +9,7 @@ set t_Co=256
 colorscheme desert
 
 " Set highlight color
-hi Search cterm=NONE ctermfg=darkred ctermbg=lightblue
+hi Search cterm=NONE ctermfg=yellow ctermbg=blue
 
 "Set color for Visual mode
 hi Visual ctermfg=yellow ctermbg=blue
