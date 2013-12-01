@@ -1,8 +1,31 @@
 " Set identation to 4 spaces
 set noai ts=4 sw=4 expandtab
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colors
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 256 colors
 set t_Co=256
 colorscheme desert
+
+" Set highlight color
+hi Search cterm=NONE ctermfg=darkred ctermbg=lightblue
+
+"Set color for Visual mode
+hi Visual ctermfg=yellow ctermbg=blue
+
+" Set up colors for spell highlighting
+hi SpellBad term=reverse ctermfg=white ctermbg=darkred guifg=#ffffff guibg=#7f0000 gui=underline
+hi SpellCap guifg=#ffffff guibg=#7f007f
+hi SpellRare ctermfg=black ctermbg=yellow guifg=#ffffff guibg=#00007f gui=underline
+hi SpellLocal term=reverse ctermfg=black ctermbg=darkgreen guifg=#ffffff guibg=#7f0000 gui=underline
+
+"Set color ofr cursor highlight
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set an 80 char column
 set colorcolumn=80
 " Rule for Makefiles to use tab
@@ -31,30 +54,24 @@ map <leader>ss :setlocal spell!<cr>
 map <leader>sa zg
 " Substitution option for marked word
 map <leader>s? z=
-" Set up colors for spell highlighting
-hi SpellBad term=reverse ctermfg=white ctermbg=darkred guifg=#ffffff guibg=#7f0000 gui=underline
-hi SpellCap guifg=#ffffff guibg=#7f007f
-hi SpellRare ctermfg=black ctermbg=yellow guifg=#ffffff guibg=#00007f gui=underline
-hi SpellLocal term=reverse ctermfg=black ctermbg=darkgreen guifg=#ffffff guibg=#7f0000 gui=underline
 " Spell check git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copy to clipboard on Visual mode
 vnoremap <C-c> "+y
 " Paste to vim"
 map <C-p> "+p
-"Highlight thecursor line
-:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Highlight the cursor line
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
-" Set highlight color
-hi Search cterm=NONE ctermfg=darkred ctermbg=lightblue
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
-"Set color for Visual mode
-hi Visual ctermfg=yellow ctermbg=blue
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins configurations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
