@@ -71,6 +71,16 @@ map <C-p> "+p
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Split configuration
+"We can use different key mappings for easy navigation between splits to save 
+"a keystroke. So instead of ctrl-w then j, it's just ctrl-j:
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins configurations
