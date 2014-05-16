@@ -31,8 +31,8 @@ except SyntaxError:
           w(sep)
           w(str(a))
       w(kwd.get("end", "\n"))
-      
-      
+
+
 # change those symbols to whatever you prefer
 symbols = {'ahead of': '↑·', 'behind': '↓·', 'prehash':':'}
 
@@ -64,10 +64,14 @@ staged = str(nb_staged)
 conflicts = str(nb_U)
 changed = str(nb_changed)
 status_lines = Popen(['git','status','-s','-uall'],stdout=PIPE).communicate()[0].splitlines()
-untracked_lines = [a for a in status_lines if a.startswith("??")]
+untracked_lines = [a for a in map(lambda s: s.decode('utf-8'), status_lines) if a.startswith("??")]
 nb_untracked = len(untracked_lines)
 untracked = str(nb_untracked)
-if not nb_changed and not nb_staged and not nb_U and not nb_untracked:
+stashes = Popen(['git','stash','list'],stdout=PIPE).communicate()[0].splitlines()
+nb_stashed = len(stashes)
+stashed = str(nb_stashed)
+
+if not nb_changed and not nb_staged and not nb_U and not nb_untracked and not nb_stashed:
 	clean = '1'
 else:
 	clean = '0'
@@ -80,7 +84,7 @@ if not branch: # not on any branch
 	if tag: # if we are on a tag, print the tag's name
 		branch = tag
 	else:
-		branch = symbols['prehash']+ Popen(['git','rev-parse','--short','HEAD'], stdout=PIPE).communicate()[0][:-1]
+		branch = symbols['prehash']+ Popen(['git','rev-parse','--short','HEAD'], stdout=PIPE).communicate()[0].decode('utf-8')[:-1]
 else:
 	remote_name = Popen(['git','config','branch.%s.remote' % branch], stdout=PIPE).communicate()[0].strip()
 	if remote_name:
@@ -115,5 +119,6 @@ out = '\n'.join([
 	conflicts,
 	changed,
 	untracked,
+	stashed,
 	clean])
 Print(out)
