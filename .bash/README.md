@@ -62,7 +62,7 @@ The symbols are as follows:
    GIT_PROMPT_ONLY_IN_REPO=1
 
    # as last entry source the gitprompt script
-   source .bash-git-prompt/gitprompt.sh
+   source ~/.bash-git-prompt/gitprompt.sh
 ```
 
 - Go in a git repository and test it!
@@ -92,6 +92,11 @@ function prompt_callback {
 ```
 
 - If you want to show the git prompt only, if you are in a git repository you can set ``GIT_PROMPT_ONLY_IN_REPO=1`` before sourcing the gitprompt script
+
+- You can show an additional indicator at the start of the prompt, which shows the result of the last executed command by setting ``GIT_PROMPT_SHOW_LAST_COMMAND_INDICATOR=1`` before sourcing the gitprompt script
+
+- It is now possible to disable the fetching of the remote repository either globally by setting ``GIT_PROMPT_FETCH_REMOTE_STATUS=0`` in your .bashrc or
+  on a per repository basis by creating a file named ``.bash-git-rc`` with the content ``FETCH_REMOTE_STATUS=0`` in the root of your git repository.
 
 -  You can get help on the git prompt with the function ``git_prompt_help``.
     Examples are available with ``git_prompt_examples``.
