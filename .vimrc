@@ -96,3 +96,10 @@ let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#symbol = '⎇  '
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Insert empty line in normald mode
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-J> m`o<Esc>``
+nnoremap <C-K> m`O<Esc>``
