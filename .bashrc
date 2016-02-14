@@ -126,3 +126,6 @@ eval "$(hub alias -s)"
 
 # added by Anaconda 1.8.0 installer
 export PATH="$HOME/anaconda/bin:$PATH"
+
+# Other scripts
+export PATH="$HOME/bin:$PATH"
