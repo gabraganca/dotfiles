@@ -109,10 +109,6 @@ fi
 # Source bash-git-prompt
 source ~/.bash/gitprompt.sh
 
-# virtualenvwrapper stuff
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Intel Fortran Compiler
 MACHINE_TYPE=`uname -m`
 if [ ${MACHINE_TYPE} == 'x86_64' ]; then
