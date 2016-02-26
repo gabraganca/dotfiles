@@ -109,17 +109,6 @@ fi
 # Source bash-git-prompt
 source ~/.bash/gitprompt.sh
 
-# Intel Fortran Compiler
-MACHINE_TYPE=`uname -m`
-if [ ${MACHINE_TYPE} == 'x86_64' ]; then
-      # 64-bit stuff here
-      source /opt/intel/composer_xe_2011_sp1.9.293/bin/compilervars.sh intel64
-else
-      # 32-bit stuff here
-      source /opt/intel/composer_xe_2011_sp1.9.293/bin/compilervars.sh ia32
-
-fi
-
 # Alias `hub` as `git`
 # For more infor, chech here https://github.com/github/hub/#aliasing
 eval "$(hub alias -s)"
