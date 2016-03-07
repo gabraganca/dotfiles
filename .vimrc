@@ -12,14 +12,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'vim-airline'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'ervandew/supertab'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,8 +35,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-
 
 " Set identation to 4 spaces
 set noai ts=4 sw=4 expandtab
