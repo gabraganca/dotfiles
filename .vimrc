@@ -20,6 +20,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
+" Plugins for Color Themes
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'git@github.com:fugalh/desert.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,6 +45,8 @@ set noai ts=4 sw=4 expandtab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set color syntax
+syntax on
 " Set 256 colors
 set t_Co=256
 colorscheme desert
