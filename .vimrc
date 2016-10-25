@@ -22,7 +22,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 " Plugins for Color Themes
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-Plugin 'git@github.com:fugalh/desert.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
