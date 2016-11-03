@@ -113,8 +113,8 @@ source ~/.bash/gitprompt.sh
 # For more infor, chech here https://github.com/github/hub/#aliasing
 eval "$(hub alias -s)"
 
-# added by Anaconda 1.8.0 installer
-export PATH="$HOME/anaconda/bin:$PATH"
+# added by Anaconda installer
+export PATH="$HOME/anaconda3/bin:$PATH"
 
 # Other scripts
 export PATH="$HOME/bin:$PATH"
