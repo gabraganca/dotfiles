@@ -10,7 +10,7 @@ Just clone it to some directory and copy files to your home to try them out.
 # Subtree
 
 This repo uses `git subtree` to manage external dependecies.
-Gustavo from the future, you do not remember subtree, here is a quick cheatsheet of how 
+Gustavo from the future, you do not remember subtree, here is a quick cheatsheet of how
 to use it.
 
 To add a new subtree:
@@ -31,3 +31,15 @@ And to pull changes from a subtree remote:
 `git subtree pull --prefix path_where_repo_goes remote_name branch --squash`
 
 See [this post](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/) for more info.
+
+## Scripts
+
+There are some scripts available. They are located in the
+[\bin][1] directory.
+
+* [`speedtest`][2]: It allow to test the internet speed using speedtest.net
+* `ssh-add.ssh`: Script that ask for the SSH password.
+
+
+[1]: https://github.com/gabraganca/dotfiles/tree/master/bin
+[2]: https://github.com/sivel/speedtest-cli
