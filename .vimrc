@@ -21,6 +21,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'alcesleo/vim-uppercase-sql'
+Plugin 'editorconfig/editorconfig-vim'
 " Plugins for Color Themes
 Plugin 'dracula/vim'
 
