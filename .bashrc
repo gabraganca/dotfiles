@@ -115,6 +115,3 @@ eval "$(hub alias -s)"
 
 # added by Anaconda installer
 export PATH="$HOME/anaconda3/bin:$PATH"
-
-# Other scripts
-export PATH="$HOME/bin:$PATH"
