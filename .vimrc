@@ -167,6 +167,9 @@ let g:airline#extensions#branch#symbol = '⎇  '
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
+" Syntastic config
+let g:syntastic_javascript_checkers = ['eslint']
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Insert empty line in normald mode
