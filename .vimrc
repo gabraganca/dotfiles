@@ -59,6 +59,16 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set shiftwidth=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Code Folding
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set color syntax
