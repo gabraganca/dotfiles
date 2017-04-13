@@ -115,3 +115,9 @@ eval "$(hub alias -s)"
 
 # added by Anaconda installer
 export PATH="$HOME/anaconda3/bin:$PATH"
+
+# Run programs installed with npm
+export PATH="$HOME/npm/bin:$PATH"
+
+# Let me run npm packages that were installed locally
+export PATH=$PATH:./node_modules/.bin
