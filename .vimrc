@@ -25,6 +25,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-scripts/indentpython.vim'
 " Plugins for Color Themes
 Plugin 'dracula/vim'
+Plugin 'trevordmiller/nova-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
