@@ -121,3 +121,7 @@ export PATH="$HOME/npm/bin:$PATH"
 
 # Let me run npm packages that were installed locally
 export PATH=$PATH:./node_modules/.bin
+
+# Enable The Fuck tool and alias it to `fix`
+# For more info, check https://github.com/nvbn/thefuck
+eval $(thefuck --alias fix)
