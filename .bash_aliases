@@ -10,11 +10,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-
-# Alias `hub` as `git`
-# For more infor, chech here https://github.com/github/hub/#aliasing
-eval "$(hub alias -s)"
-
 # Enable The Fuck tool and alias it to `fix`
 # For more info, check https://github.com/nvbn/thefuck
 eval $(thefuck --alias fix)
