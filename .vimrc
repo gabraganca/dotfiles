@@ -19,6 +19,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular'
 Plugin 'alcesleo/vim-uppercase-sql'
 Plugin 'editorconfig/editorconfig-vim'
@@ -171,6 +172,8 @@ let g:airline_right_sep = ''
 " Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
 
+" NerdTree config
+map <C-n> :NERDTreeToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Insert empty line in normald mode
