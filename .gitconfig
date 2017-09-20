@@ -20,5 +20,6 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
     diff-csv = diff --word-diff-regex="[^[:space:],]+":w
+	up = pull --rebase --autostash
 [core]
 	editor = vim
