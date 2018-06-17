@@ -4,7 +4,17 @@ This is a repo to keep my ``.*rc`` and other config files versioned.
 This helps if I am working in more than one computer (work + home + travel notebook).
 With this, I am sure that I am running the same stuff everywhere.
 
-Just clone it to some directory and copy files to your home to try them out.
+## Set up
+
+To set up the `dotfiles` do the following:
+
+```
+cd
+git init
+git remote add origin https://github.com/foo/bar.git
+git pull
+```
+
 **Don't forget to backup your personal files before!**
 
 # Subtree
