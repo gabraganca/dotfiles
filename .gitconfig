@@ -23,3 +23,5 @@
 	up = pull --rebase --autostash
 [core]
 	editor = vim
+[init]
+	defaultBranch = main
